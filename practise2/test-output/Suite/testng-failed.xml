@@ -8,6 +8,7 @@
           <include name="isInStock"/>
           <include name="launchURL"/>
           <include name="afterSuite"/>
+          <include name="listOfIhones"/>
         </methods>
       </class> <!-- ltim.practise2.TestApp -->
     </classes>

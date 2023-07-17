@@ -48,8 +48,15 @@ public class ListOfIphones {
 	
 	public String verifyTitle() {
 		Set<String> set = driver.getWindowHandles();
+		String parent=driver.getWindowHandle();
 		for(String a : set) {
-			System.out.println(a);
+			if(!parent.equalsIgnoreCase(a)) {
+				driver.switchTo().window(a);
+				/*
+				 * System.out.println(a); System.out.println(driver.getTitle());
+				 */
+			}
+				
 		}
 		String s = productTitle.getText();
 		
